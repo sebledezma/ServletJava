@@ -20,8 +20,8 @@ public class Serveur {
 				System.out.println("le serveur a reçu : " + obj);
 				// envoi de la réponse
 				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-				fini=(((int)(Math.random()*2))==0);
-				oos.writeObject(obj.toString()+fini);
+				fini=(((int)(Math.random()*5))==0);
+				oos.writeObject(new Boolean(fini));
 				socket.close();
 			}
 			System.out.println("fermeture du serveur");

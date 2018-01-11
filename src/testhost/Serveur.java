@@ -12,15 +12,15 @@ public class Serveur {
 			ServerSocket serveur= new ServerSocket(5000);
 			boolean fini=false;
 			while(!fini) {
-				Socket socket= serveur.accept();
+				Socket socket = serveur.accept();
 				// attente active d’un client
 				// récupération de la requête
 				ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-				Object obj= ois.readObject();
+				Object obj = ois.readObject();
 				System.out.println("le serveur a reçu : " + obj);
 				// envoi de la réponse
 				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-				fini=(((int)(Math.random()*5))==0);
+				fini=(((int)(Math.random()*2))==0);
 				oos.writeObject(obj.toString()+fini);
 				socket.close();
 			}

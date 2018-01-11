@@ -4,8 +4,6 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class Adressage {
-
-
 	public static void main(String[] args) {
 		InetAddress LocaleAdresse ;
 		InetAddress ServeurAdresse;
@@ -22,5 +20,4 @@ public class Adressage {
 			e.printStackTrace();
 		}
 	}
-
 }

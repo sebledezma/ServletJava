@@ -11,7 +11,7 @@ public class ClientTriListe {
 	public static void main(String[] args) {
 		int[] l = {1,20,5,8,7,9,14,3,6,5,2,1,4,6,3,8,7};
 
-		afficheTableauInt(new ClientTriListe(l).triFusionJava());
+		ClientTriListe.afficheTableauInt(new ClientTriListe(l).triFusionJava());
 	}
 
 	public static void afficheTableauInt(int[] l) {

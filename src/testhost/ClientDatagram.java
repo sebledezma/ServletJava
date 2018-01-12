@@ -17,7 +17,7 @@ public class ClientDatagram {
 	private static int MsgSize = 5;
 	private static void simple() {
 		try {
-			byte[] data = "un message".getBytes();
+			byte[] data = "un message de bonjour".getBytes();
 			InetAddress addr;
 			addr = InetAddress.getByName("localhost");
 			DatagramPacket packet = new DatagramPacket (data, data.length, addr,1234);

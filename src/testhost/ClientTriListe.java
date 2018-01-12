@@ -44,14 +44,13 @@ public class ClientTriListe {
 		int[] rep = new int[lDeb.length+lFin.length];
 		int indiceDeb = 0;
 		int indiceFin = 0;
-		boolean lDebVide=false;
-		boolean lFinVide=false;
-		int indice=0;
+		boolean lDebVide = false;
+		boolean lFinVide = false;
+		int indice = 0;
 		while (!lDebVide || !lFinVide) {
-			if (lFinVide || (!lDebVide &&
-					lDeb[indiceDeb]<lFin[indiceFin])) {
-				rep[indice++]=lDeb[indiceDeb++];
-				lDebVide= (indiceDeb==lDeb.length);
+			if (lFinVide || (!lDebVide && lDeb[indiceDeb]<lFin[indiceFin])) {
+				rep[indice++] = lDeb[indiceDeb++];
+				lDebVide = (indiceDeb==lDeb.length);
 			}
 			else {
 				rep[indice++]=lFin[indiceFin++];

@@ -94,7 +94,7 @@ public class Trieur extends Thread {
     }
   }
   public static void main(String[] args) {
-    int[] t = {5, 8, 3, 2, 7, 10, 1};
+    int[] t = {1,20,5,8,7,9,14,3,6,5,2,1,4,6,3,8,7};
     Trieur trieur = new Trieur(t);
     trieur.start();
     try {
